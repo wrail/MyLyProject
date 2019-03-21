@@ -12,8 +12,4 @@ public class ExceptionResult {
         this.message = e.getMsg();
         this.timestamp = System.currentTimeMillis();
     }
-
-
-
-
 }

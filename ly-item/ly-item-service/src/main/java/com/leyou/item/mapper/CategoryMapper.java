@@ -1,6 +1,6 @@
 package com.leyou.item.mapper;
 
-import com.leyou.item.pojo.Category;
+import com.leyou.item.Category;
 import tk.mybatis.mapper.common.Mapper;
 
 /*
