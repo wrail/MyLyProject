@@ -1,0 +1,15 @@
+server:
+  port: 8082
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka/
+  instance:
+    ip-address: 127.0.0.1
+    prefer-ip-address: true
+spring:
+  application:
+    name: upload-service
+  servlet:
+    multipart:
+      max-file-size: 5MB   #根据情况调整上传文件大小

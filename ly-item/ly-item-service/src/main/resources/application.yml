@@ -26,4 +26,4 @@ eureka:
 #mybatis日志打印
 mybatis:
   configuration:
-    log-impl: org.apache.ibatis.logging.log4j2.Log4j2Impl
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

@@ -12,6 +12,7 @@
         <module name="ly-item-interface" />
         <module name="ly-item-service" />
         <module name="ly-registry" />
+        <module name="ly-upload" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -27,6 +28,7 @@
       <module name="ly-item-interface" options="-parameters" />
       <module name="ly-item-service" options="-parameters" />
       <module name="ly-registry" options="-parameters" />
+      <module name="ly-upload" options="-parameters" />
     </option>
   </component>
 </project>
