@@ -39,7 +39,7 @@ public class UploadService {
             throw new LyException(ExceptionEnum.UPLOAD_ERROR);
         }
         //返回路径
-        String url = "cdddddd";
+        String url = "xxxxxxx";
         return url;
     }
 }
