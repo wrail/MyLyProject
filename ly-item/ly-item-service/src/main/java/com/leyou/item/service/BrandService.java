@@ -1,7 +1,6 @@
 package com.leyou.item.service;
 
 
-import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.leyou.common.enums.ExceptionEnum;
@@ -21,6 +20,7 @@ import java.util.List;
 public class BrandService {
     @Autowired
     private BrandMapper brandMapper;
+
 
     public PageResult qurayBrandByPage(Integer page, Integer rows, String sortBy, Boolean desc, String key) {
         //1.分页,使用分页助手，必须放在查询前对查询进行拦截
@@ -48,11 +48,9 @@ public class BrandService {
         if (list.isEmpty()) {
             throw new LyException(ExceptionEnum.BRANDER_NOT_FOUND);
         }
-        //解析分页结果,在分页助手中，已经将list转为PageInfo
-        PageInfo pageInfo = new PageInfo<>(list);
-
-        return new PageResult(pageInfo.getTotal(), list);
-
+        PageInfo<Brand> pageInfo = new PageInfo<>(list);
+        System.out.println("page:" + page + "rows:" + rows);
+        return new PageResult(pageInfo.getTotal(), pageInfo.getList());
     }
 
     @Transactional

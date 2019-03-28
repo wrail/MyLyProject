@@ -13,3 +13,19 @@ spring:
   servlet:
     multipart:
       max-file-size: 5MB   #根据情况调整上传文件大小
+fdfs:
+  so-timeout: 2500
+  connect-timeout: 600
+  thumb-image:   #缩略图
+    height: 60
+    width: 60
+  tracker-list:
+    - 192.168.108.128:22122
+#配置baseUrl和图片Type,利用配置类加载属性
+ly:
+  upload:
+    baseUrl: http://image.leyou.com/
+    allowTypes:
+      - image/jpeg
+      - image/png
+      - image/bmp

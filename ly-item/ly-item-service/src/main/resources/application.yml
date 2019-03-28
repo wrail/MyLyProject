@@ -7,13 +7,13 @@ spring:
     allow-bean-definition-overriding: true
   application:
     name: item-service
-#源数据
+  #源数据
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/leyou?serverTimezone=GMT&useSSL=FALSE
     username: root
     password: wrial.qq.com
-
+    type: com.alibaba.druid.pool.DruidDataSource
 #Eureka
 eureka:
   client:
@@ -27,3 +27,4 @@ eureka:
 mybatis:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#  config-location: classpath:SqlMapConfig.xml
